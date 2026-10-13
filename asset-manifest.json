@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/knowyourcars/static/css/main.33aca2f4.css",
+    "main.js": "/knowyourcars/static/js/main.b9877008.js",
+    "index.html": "/knowyourcars/index.html",
+    "main.33aca2f4.css.map": "/knowyourcars/static/css/main.33aca2f4.css.map",
+    "main.b9877008.js.map": "/knowyourcars/static/js/main.b9877008.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33aca2f4.css",
+    "static/js/main.b9877008.js"
+  ]
+}
