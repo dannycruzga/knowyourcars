@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.19ace497.css","mappings":"AAAA,KACE,sCACF,CCFA,gBACI,WACH","sources":["index.css","components/header/Header.css"],"sourcesContent":["body {\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n",".main-header h1 {\r\n    color: green\r\n};"],"names":[],"sourceRoot":""}
