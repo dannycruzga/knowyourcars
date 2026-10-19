@@ -6,11 +6,13 @@ const Header = () => {
 
     return (
         <header className="main-header">
-            <img src={logo} alt="logo" />
-            <h1>Hi</h1>
+            <div className="main-logo">
+                <h2>Know<span>YourCars</span></h2>
+                <p>Drive Knowledge Further</p>
+            </div>
             <Navigation />
         </header>
-    )
+    );
 };
 
 export default Header;
