@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/knowyourcars/static/css/main.d9d5c318.css",
-    "main.js": "/knowyourcars/static/js/main.e725c051.js",
+    "main.css": "/knowyourcars/static/css/main.9ec2964c.css",
+    "main.js": "/knowyourcars/static/js/main.f53789f4.js",
     "static/media/logo.png": "/knowyourcars/static/media/logo.c7e09d3e5d26c3f1b52e.png",
     "index.html": "/knowyourcars/index.html",
-    "main.d9d5c318.css.map": "/knowyourcars/static/css/main.d9d5c318.css.map",
-    "main.e725c051.js.map": "/knowyourcars/static/js/main.e725c051.js.map"
+    "main.9ec2964c.css.map": "/knowyourcars/static/css/main.9ec2964c.css.map",
+    "main.f53789f4.js.map": "/knowyourcars/static/js/main.f53789f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9d5c318.css",
-    "static/js/main.e725c051.js"
+    "static/css/main.9ec2964c.css",
+    "static/js/main.f53789f4.js"
   ]
 }
