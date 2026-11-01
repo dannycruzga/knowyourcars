@@ -4,7 +4,7 @@
     text-align: center;
     color: white;
     padding-top: 20px;
-    background-image: url("/public/images/home/main.png");
+    background-image: url("/src/pages/home/images/main.png");
     background-size: cover;
     background-position: center;
 }
@@ -91,7 +91,7 @@
 
 /* More Information */
 #more {
-    background-image: url("/public/images/home/info.png");
+    background-image: url("/src/pages/home/images/info.png");
     background-size: cover;
     background-position: center;
     color: white;
@@ -121,7 +121,7 @@
 #featured {
     color: white;
     padding: 60px;
-    background-image: url("/public/images/home/mustang.png");
+    background-image: url("/src/pages/home/images/mustang.png");
     background-size: cover;
     background-position: center;
     min-height: 450px;
@@ -140,7 +140,7 @@
 /* About */
 #about-home {
     padding: 60px;
-    background-image: url("/public/images/home/about.png");
+    background-image: url("/src/pages/home/images/about.png");
     background-size: cover;
     background-position: center;
 }

@@ -4,6 +4,20 @@ import { Link } from "react-router-dom";
 import BrandCard from "../../components/brandcard/BrandCard";
 import CarCard from "../../components/carcard/CarCard";
 
+import ford from "./images/ford.png";
+import chevrolet from "./images/chevrolet.png";
+import dodge from "./images/dodge.png";
+import mercedes from "./images/mercedes.png";
+import fordm from "./images/fordm.jpg";
+import mustang from "./images/mustang.jpg";
+import f150 from "./images/f150.jpg";
+import corvette from "./images/corvette.jpeg";
+import camaro from "./images/camaro.jpg";
+import charger from "./images/charger.jpg";
+import durango from "./images/durango.jpg";
+import cclass from "./images/cclass.jpg";
+import gclass from "./images/gclass.jpg";
+
 const Home = () => {
     return (
       <main>
@@ -32,25 +46,25 @@ const Home = () => {
           <div className="brand-cards">
             <BrandCard
               name="Ford"
-              image="/images/home/ford.png"
+              image={ford}
               description="American innovation and performance."
               link="/ford"
             />
             <BrandCard
               name="Chevrolet"
-              image="/images/home/chevrolet.png"
+              image={chevrolet}
               description="Explore Chevrolet's iconic vehicles."
               link="/chevrolet"
             />
             <BrandCard
               name="Dodge"
-              image="/images/home/dodge.png"
+              image={dodge}
               description="Discover powerful Dodge vehicles."
               link="/dodge"
             />
             <BrandCard
               name="Mercedes-Benz"
-              image="/images/home/mercedes.png"
+              image={mercedes}
               description="Explore luxury and innovation."
               link="/mercedes"
             />
@@ -60,7 +74,7 @@ const Home = () => {
         <section id="slideshow">
           <h4>EXPLORE MORE</h4>
           <h2>Featured Cars</h2>
-          <img src="/images/home/fordm.jpg" alt="Featured Ford Mustang" />
+          <img src={fordm} alt="Featured Ford Mustang" />
         </section>
 
         <section id="cars">
@@ -72,7 +86,7 @@ const Home = () => {
               year={2025}
               price="$32,000"
               type="Sports Car"
-              image="/images/cars/mustang.jpg"
+              image={mustang}
             />
             <CarCard
               brand="Ford"
@@ -80,7 +94,7 @@ const Home = () => {
               year={2025}
               price="$38,000"
               type="Pickup Truck"
-              image="/images/cars/f150.jpg"
+              image={f150}
             />
             <CarCard
               brand="Chevrolet"
@@ -88,7 +102,7 @@ const Home = () => {
               year={2025}
               price="$68,000"
               type="Sports Car"
-              image="/images/cars/corvette.jpeg"
+              image={corvette}
             />
             <CarCard
               brand="Chevrolet"
@@ -96,7 +110,7 @@ const Home = () => {
               year={2025}
               price="$32,000"
               type="Sports Car"
-              image="/images/cars/camaro.jpg"
+              image={camaro}
             />
             <CarCard
               brand="Dodge"
@@ -104,7 +118,7 @@ const Home = () => {
               year={2025}
               price="$60,000"
               type="Muscle Car"
-              image="/images/cars/charger.jpg"
+              image={charger}
             />
             <CarCard
               brand="Dodge"
@@ -112,7 +126,7 @@ const Home = () => {
               year={2025}
               price="$42,000"
               type="SUV"
-              image="/images/cars/durango.jpg"
+              image={durango}
             />
             <CarCard
               brand="Mercedes-Benz"
@@ -120,7 +134,7 @@ const Home = () => {
               year={2025}
               price="$48,000"
               type="Sedan"
-              image="/images/cars/cclass.jpg"
+              image={cclass}
             />
             <CarCard
               brand="Mercedes-Benz"
@@ -128,7 +142,7 @@ const Home = () => {
               year={2025}
               price="$149,000"
               type="SUV"
-              image="/images/cars/gclass.jpg"
+              image={gclass}
             />
           </div>
         </section>
