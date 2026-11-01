@@ -9,13 +9,10 @@ const About = () => {
       <section className="about-hero">
         <div className="about-hero-text">
           <h4>ABOUT KNOWYOURCARS</h4>
-          <h1>
-            Every Car Has a Story.
-            <br />
+          <h1>Every Car Has a Story.<br />
             We Help You <span>Discover It.</span>
           </h1>
-          <p>
-            KnowYourCars brings car information together in one place for anyone
+          <p>KnowYourCars brings car information together in one place for anyone
             interested in learning more about the automotive world. Visitors can
             compare vehicles, discover important models, explore performance,
             and see how prices vary across different brands. From early
@@ -43,8 +40,7 @@ const About = () => {
             <br />
             Who Love Cars
           </h2>
-          <p>
-            KnowYourCars was created by car enthusiasts, for car enthusiasts. We
+          <p>KnowYourCars was created by car enthusiasts, for car enthusiasts. We
             wanted to build a place where people can easily explore the history,
             models, and innovations of the world's most recognizable car brands.
             Whether you're looking to learn, compare, or simply feed your
@@ -69,7 +65,7 @@ const About = () => {
           </p>
         </div>
       </section>
-      
+
       <section className="about-video">
         <h4>EXPLORE MORE</h4>
         <h2>The History of Cars</h2>
