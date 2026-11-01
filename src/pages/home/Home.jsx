@@ -146,6 +146,7 @@ const Home = () => {
             />
           </div>
         </section>
+        
         <section id="more">
           <h4 className="discover">DISCOVER MORE</h4>
           <h2>More Than Just Car Brands</h2>

@@ -1,0 +1,116 @@
+/* About Hero */
+.about-hero {
+    height: 525px;
+    background-image: url("./images/aboutknow.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.about-hero-text {
+    max-width: 400px;
+    padding: 60px 0 0 40px;
+}
+
+.about-hero h4, .story h4, .purpose h4 {
+    color: #159cff;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.about-hero h1 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.about-hero h1 span, .purpose h2 span {
+    color: #159cff;
+}
+
+.about-hero p, .story p, .purpose p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Our Story */
+.story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 70px 50px;
+    background: #eeeeee;
+}
+
+.story-image {
+    position: relative;
+    width: 45%;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.then, .now {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    background: #071827;
+    padding: 8px 15px;
+}
+
+.then {
+    left: 10px;
+}
+
+.now {
+    right: 10px;
+}
+
+.story-text {
+    width: 45%;
+}
+
+.story-text h2, .purpose h2 {
+    font-size: 35px;
+}
+
+/* Our Purpose */
+.purpose {
+    height: 525px;
+    background-image: url("./images/ourpurpose.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.purpose-text {
+    max-width: 420px;
+    padding: 60px 0 0 40px;
+}
+
+/* Small Screen */
+@media (max-width: 700px) {
+    .about-hero, .purpose {
+        padding: 40px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+    .story {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+
+    .story-image, .story-text {
+        width: 100%;
+    }
+
+    .story, .purpose h2 {
+        font-size: 28px;
+    }
+}
