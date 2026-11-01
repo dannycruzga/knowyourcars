@@ -1,0 +1,22 @@
+.brand-card {
+    width: 230px;
+}
+
+.brand-card img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+}
+
+.brand-card p {
+    min-height: 40px;
+}
+
+.brand-card button {
+    background: #159cff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 25px;
+    cursor: pointer;
+}

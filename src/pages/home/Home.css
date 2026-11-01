@@ -22,6 +22,15 @@
     font-size: 18px;
 }
 
+#hero button {
+    background: #159cff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
 /* Brands */
 #brands {
     background: #eeeeee;
@@ -31,4 +40,156 @@
 
 #brands h2 {
     font-size: 35px;
+}
+
+/* Brand Cards */
+.brand-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Slideshow */
+#slideshow {
+    background: #071827;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#slideshow h4 {
+    color: #159cff;
+    letter-spacing: 3px;
+}
+
+#slideshow h2 {
+    font-size: 32px;
+}
+
+#slideshow img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Explore Our Cars */
+#cars {
+    background: #eeeeee;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#car-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* More Information */
+#more {
+    background-image: url("/public/images/home/info.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.discover {
+    color: #159cff;
+    letter-spacing: 3px;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.info {
+    width: 220px;
+    border: 1px solid white;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Featured Mustang */
+#featured {
+    color: white;
+    padding: 60px;
+    background-image: url("/public/images/home/mustang.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    box-sizing: border-box;
+}
+
+.featvehicle {
+    color: #159cff;
+    letter-spacing: 3px;
+}
+
+#featured p {
+    max-width: 400px;
+}
+
+/* About */
+#about-home {
+    padding: 60px;
+    background-image: url("/public/images/home/about.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutknow {
+    color: #159cff;
+    letter-spacing: 3px;
+}
+
+.aboutknow span {
+    color: #add8e6;
+}
+
+#about-home p {
+    max-width: 450px;
+}
+
+/* Buttons */
+#featured button, #about-home button {
+    background: #159cff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .brand-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #car-list {
+        grid-template-columns: 1fr;
+    }
+
+    .info-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    #featured, #about-home {
+        padding: 40px 20px;
+    }
 }
