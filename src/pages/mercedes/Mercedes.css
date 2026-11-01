@@ -1,0 +1,118 @@
+.mercedes-page section {
+    min-height: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.mercedes-page section h3 {
+    color: #c0c0c0;
+    margin: 0;
+}
+
+.mercedes-page section h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.mercedes-page section p {
+    width: 700px;
+    max-width: 100%;
+    line-height: 1.4;
+}
+
+.mercedes-page section span {
+    color: #c0c0c0;
+}
+
+/* Main */
+#mercedes-hero {
+    min-height: 800px;
+    background-image: url("./images/mercedeslogo.png");
+    text-align: center;
+    padding-top: 350px;
+}
+
+#mercedes-hero h1 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+#mercedes-hero p {
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+}
+
+/* History */
+#mercedes-history {
+    background-image: url("./images/mercedeshistory.png");
+    padding-left: 55%;
+}
+
+#mercedes-history p {
+    font-size: 18px;
+}
+
+/* First */
+#mercedes-first {
+    background-image: url("./images/mercedesfirst.png");
+    min-height: 550px;
+}
+
+#mercedes-first p {
+    font-size: 18px;
+}
+
+/* Newest */
+#mercedes-newest {
+    background-image: url("./images/mercedesnewest.png");
+    padding-left: 55%;
+}
+
+/* Fastest */
+#mercedes-fastest {
+    background-image: url("./images/mercedesfastest.png");
+}
+
+/* Least Expensive */
+#mercedes-leastexp {
+    background-image: url("./images/mercedesleastexp.png");
+    padding-left: 55%;
+}
+
+/* Most Expensive */
+#mercedes-mostexp {
+    background-image: url("./images/mercedesmostexp.png");
+}
+
+/* Small Screen */
+@media (max-width: 700px) {
+    .mercedes-page section {
+        min-height: 350px;
+        padding: 30px;
+    }
+
+    #mercedes-hero {
+        min-height: 550px;
+        padding-top: 100px;
+    }
+
+    #mercedes-hero h1 {
+        font-size: 32px;
+    }
+
+    #mercedes-hero p {
+        font-size: 16px;
+    }
+
+    #mercedes-history, #mercedes-newest, #mercedes-leastexp {
+        padding: 30px;
+    }
+
+    .mercedes-page section p {
+        width: 100%;
+    }
+}
