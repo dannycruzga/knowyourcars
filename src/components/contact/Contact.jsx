@@ -1,20 +1,36 @@
 import React, {useState} from "react";
 import "./Contact.css";
+import toast, {Toaster} from "react-hot-toast";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (name && email && message) {
-      setSubmitted(true);
-      setName("");
-      setEmail("");
-      setMessage("");
+    const formData = new FormData(e.target);
+    formData.append("access_key", "4ac60f86-4b80-4e12-9bdd-4820f3d033fa");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        toast.success("Message sent successfully!");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        toast.error("Failed to send message.");
+      }
+    } catch (error) {
+      toast.error("Something went wrong. Try again.");
     }
   };
 
@@ -36,12 +52,7 @@ const Contact = () => {
 
         <button type="submit">Send Message</button>
       </form>
-
-      {submitted && (
-        <p className="contact-success">
-          Your message has been entered successfully!
-        </p>
-      )}
+      <Toaster position="top-center" />
     </section>
   );
 };

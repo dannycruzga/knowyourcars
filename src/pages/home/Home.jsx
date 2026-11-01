@@ -3,6 +3,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import BrandCard from "../../components/brandcard/BrandCard";
 import CarCard from "../../components/carcard/CarCard";
+import {Tooltip} from "react-tooltip";
 
 import ford from "./images/ford.png";
 import chevrolet from "./images/chevrolet.png";
@@ -93,7 +94,10 @@ const Home = () => {
 
       <section id="slideshow">
         <h4>EXPLORE MORE</h4>
-        <h2>Featured Cars</h2>
+        <h2 data-tooltip-id="car-tooltip" data-tooltip-content="Explore some of our favorite cars!">
+          Featured Cars
+        </h2>
+        <Tooltip id="car-tooltip" />
         <div className="slideshow-container">
           <button onClick={previousSlide} className="slide-btn">
             &#10094;
