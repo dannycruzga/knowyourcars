@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/knowyourcars/static/css/main.4997620b.css",
-    "main.js": "/knowyourcars/static/js/main.40f09b9b.js",
+    "main.css": "/knowyourcars/static/css/main.7c40dd2a.css",
+    "main.js": "/knowyourcars/static/js/main.6cc22769.js",
     "static/media/ourstory.png": "/knowyourcars/static/media/ourstory.67627e9f176d8e6bb556.png",
     "static/media/ford.png": "/knowyourcars/static/media/ford.4018faa9c474cf612b3e.png",
     "static/media/main.png": "/knowyourcars/static/media/main.0178b07fc83182603a55.png",
@@ -49,17 +49,20 @@
     "static/media/fordm.jpg": "/knowyourcars/static/media/fordm.15894aa562a154fcd5df.jpg",
     "static/media/f150.jpg": "/knowyourcars/static/media/f150.e35224a2ccbb487d8368.jpg",
     "static/media/camaro.jpg": "/knowyourcars/static/media/camaro.0df01c2cc36670d58ef5.jpg",
+    "static/media/chevroletcor.jpeg": "/knowyourcars/static/media/chevroletcor.7f0709edf53df7c26db4.jpeg",
+    "static/media/dodgehc.avif": "/knowyourcars/static/media/dodgehc.ab30030a1c7b575b30b7.avif",
     "static/media/gclass.jpg": "/knowyourcars/static/media/gclass.f1ae478f00b2234dd7d3.jpg",
     "static/media/mustang.jpg": "/knowyourcars/static/media/mustang.59bcf08f3b2c384f1301.jpg",
     "static/media/cclass.jpg": "/knowyourcars/static/media/cclass.6e3bc35b97cf7d04212a.jpg",
+    "static/media/mercedesamg.jpg": "/knowyourcars/static/media/mercedesamg.f1ab0885bfdba8342683.jpg",
     "static/media/charger.jpg": "/knowyourcars/static/media/charger.b79e1f87fe4d6f6083c8.jpg",
     "static/media/durango.jpg": "/knowyourcars/static/media/durango.ce4e0af71c38649c66dd.jpg",
     "index.html": "/knowyourcars/index.html",
-    "main.4997620b.css.map": "/knowyourcars/static/css/main.4997620b.css.map",
-    "main.40f09b9b.js.map": "/knowyourcars/static/js/main.40f09b9b.js.map"
+    "main.7c40dd2a.css.map": "/knowyourcars/static/css/main.7c40dd2a.css.map",
+    "main.6cc22769.js.map": "/knowyourcars/static/js/main.6cc22769.js.map"
   },
   "entrypoints": [
-    "static/css/main.4997620b.css",
-    "static/js/main.40f09b9b.js"
+    "static/css/main.7c40dd2a.css",
+    "static/js/main.6cc22769.js"
   ]
 }
