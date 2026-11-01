@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-message">
-                <p>Cars connect people.<br />Knowledge keeps them alive.</p>
+                <p>Cars connect people. Knowledge keeps them alive.</p>
             </div>
         </footer>
     );

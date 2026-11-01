@@ -9,15 +9,18 @@ const About = () => {
       <section className="about-hero">
         <div className="about-hero-text">
           <h4>ABOUT KNOWYOURCARS</h4>
-          <h1>Every Car Has a Story.<br />
-              We Help You <span>Discover It.</span>
+          <h1>
+            Every Car Has a Story.
+            <br />
+            We Help You <span>Discover It.</span>
           </h1>
-          <p>KnowYourCars brings car information together in one place for anyone
-             interested in learning more about the automotive world. Visitors can
-             compare vehicles, discover important models, explore performance,
-             and see how prices vary across different brands. From early
-             automobiles to today's newest vehicles, the site makes it simple to
-             discover what makes each car and manufacturer unique.
+          <p>
+            KnowYourCars brings car information together in one place for anyone
+            interested in learning more about the automotive world. Visitors can
+            compare vehicles, discover important models, explore performance,
+            and see how prices vary across different brands. From early
+            automobiles to today's newest vehicles, the site makes it simple to
+            discover what makes each car and manufacturer unique.
           </p>
         </div>
       </section>
@@ -40,12 +43,13 @@ const About = () => {
             <br />
             Who Love Cars
           </h2>
-          <p>KnowYourCars was created by car enthusiasts, for car enthusiasts. We
-             wanted to build a place where people can easily explore the history,
-             models, and innovations of the world's most recognizable car brands.
-             Whether you're looking to learn, compare, or simply feed your
-             curiosity, our goal is to make the world of cars more accessible and
-             enjoyable for everyone.
+          <p>
+            KnowYourCars was created by car enthusiasts, for car enthusiasts. We
+            wanted to build a place where people can easily explore the history,
+            models, and innovations of the world's most recognizable car brands.
+            Whether you're looking to learn, compare, or simply feed your
+            curiosity, our goal is to make the world of cars more accessible and
+            enjoyable for everyone.
           </p>
         </div>
       </section>
@@ -64,6 +68,14 @@ const About = () => {
              the vehicles that continue to shape automotive history.
           </p>
         </div>
+      </section>
+      
+      <section className="about-video">
+        <h4>EXPLORE MORE</h4>
+        <h2>The History of Cars</h2>
+        <p>Take a closer look at how automobiles have evolved over time.</p>
+        <iframe src="https://www.youtube.com/embed/3V9g8q8V8sI" title="History of Cars" allowFullScreen>
+        </iframe>
       </section>
       <Contact />
     </main>

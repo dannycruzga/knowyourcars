@@ -90,6 +90,31 @@
     padding: 60px 0 0 40px;
 }
 
+/* About Video */
+.about-video {
+    background: #eeeeee;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-video h4 {
+    color: #159cff;
+    letter-spacing: 2px;
+}
+
+.about-video h2 {
+    font-size: 35px;
+}
+
+.about-video iframe {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
 /* Small Screen */
 @media (max-width: 700px) {
     .about-hero, .purpose {
