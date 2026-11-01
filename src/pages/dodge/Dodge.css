@@ -1,0 +1,109 @@
+.dodge-page section {
+    min-height: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.dodge-page section h3 {
+    color: red;
+    margin: 0;
+}
+
+.dodge-page section h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.dodge-page section p {
+    width: 700px;
+    max-width: 100%;
+    line-height: 1.4;
+}
+
+.dodge-page section span {
+    color: red;
+}
+
+/* Main */
+#dodge-hero {
+    min-height: 700px;
+    background-image: url("./images/dodgelogo.png");
+    text-align: center;
+    padding-top: 200px;
+}
+
+#dodge-hero h1 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+#dodge-hero p {
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+}
+
+/* History */
+#dodge-history {
+    background-image: url("./images/dodgehistory.png");
+    padding-left: 55%;
+}
+
+/* First */
+#dodge-first {
+    background-image: url("./images/firstdodge.png");
+}
+
+/* Newest */
+#dodge-newest {
+    background-image: url("./images/newestdodge.png");
+    padding-left: 55%;
+}
+
+/* Fastest */
+#dodge-fastest {
+    background-image: url("./images/fastestdodge.png");
+}
+
+/* Least Expensive */
+#dodge-leastexp {
+    background-image: url("./images/leastexpdodge.png");
+    padding-left: 55%;
+}
+
+/* Most Expensive */
+#dodge-mostexp {
+    background-image: url("./images/mostexpdodge.png");
+}
+
+/* Small Screen */
+@media (max-width: 700px) {
+    .dodge-page section {
+        min-height: 350px;
+        padding: 30px;
+    }
+
+    #dodge-hero {
+        min-height: 550px;
+        padding-top: 100px;
+    }
+
+    #dodge-hero h1 {
+        font-size: 32px;
+    }
+
+    #dodge-hero p {
+        font-size: 16px;
+    }
+
+    #dodge-history, #dodge-newest, #dodge-leastexp {
+        padding: 30px;
+    }
+
+    .dodge-page section p {
+        width: 100%;
+    }
+}
