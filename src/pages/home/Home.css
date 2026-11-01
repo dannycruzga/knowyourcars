@@ -58,20 +58,43 @@
     padding: 40px 20px;
 }
 
-#slideshow h4 {
-    color: #159cff;
-    letter-spacing: 3px;
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
 }
 
-#slideshow h2 {
-    font-size: 32px;
-}
-
-#slideshow img {
+.slideshow-container img {
     width: 100%;
     max-width: 500px;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
+}
+
+.slide-btn {
+    background: #159cff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.slide-btn:hover {
+    background: #0077cc;
+}
+
+#slideshow h4 {
+    color: #159cff;
+}
+
+#slideshow h3 {
+    margin-top: 15px;
+    font-size: 22px;
 }
 
 /* Explore Our Cars */
@@ -191,5 +214,19 @@
 
     #featured, #about-home {
         padding: 40px 20px;
+    }
+
+    .slideshow-container {
+        gap: 5px;
+    }
+    
+    .slideshow-container img {
+        width: 70%;
+        height: 200px;
+    }
+    
+    .slide-btn {
+        padding: 8px 10px;
+        font-size: 18px;
     }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import BrandCard from "../../components/brandcard/BrandCard";
@@ -17,8 +17,28 @@ import charger from "./images/charger.jpg";
 import durango from "./images/durango.jpg";
 import cclass from "./images/cclass.jpg";
 import gclass from "./images/gclass.jpg";
+import chevroletcor from "./images/chevroletcor.jpeg";
+import dodgehc from "./images/dodgehc.avif";
+import mercedesamg from "./images/mercedesamg.jpg";
 
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    { image: fordm, name: "Ford Mustang" },
+    { image: chevroletcor, name: "Chevrolet Corvette" },
+    { image: dodgehc, name: "Dodge Hellcat" },
+    { image: mercedesamg, name: "Mercedes-Benz AMG" },
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((currentSlide + 1) % slides.length);
+  };
+
+  const previousSlide = () => {
+    setCurrentSlide((currentSlide - 1 + slides.length) % slides.length);
+  };
+
     return (
       <main>
         <section id="hero">
@@ -74,7 +94,16 @@ const Home = () => {
         <section id="slideshow">
           <h4>EXPLORE MORE</h4>
           <h2>Featured Cars</h2>
-          <img src={fordm} alt="Featured Ford Mustang" />
+          <div className="slideshow-container">
+            <button onClick={previousSlide} className="slide-btn">
+              &#10094;
+            </button>
+            <img src={slides[currentSlide].image} alt={slides[currentSlide].name} />
+            <button onClick={nextSlide} className="slide-btn">
+              &#10095;
+            </button>
+          </div>
+          <h3>{slides[currentSlide].name}</h3>
         </section>
 
         <section id="cars">
@@ -146,7 +175,7 @@ const Home = () => {
             />
           </div>
         </section>
-        
+
         <section id="more">
           <h4 className="discover">DISCOVER MORE</h4>
           <h2>More Than Just Car Brands</h2>
@@ -173,12 +202,19 @@ const Home = () => {
         <section id="featured">
           <h4 className="featvehicle">FEATURED VEHICLE</h4>
           <h2>2026 Ford Mustang</h2>
-          <p>The 2026 Ford Mustang continues the legacy of one of Ford’s most recognizable cars. 
-            It combines its classic muscle car design with modern technology, strong performance, and updated features. 
-            The Mustang has changed throughout the years while still keeping the style and power that made it popular.
+          <p>
+            The 2026 Ford Mustang continues the legacy of one of Ford’s most
+            recognizable cars. It combines its classic muscle car design with
+            modern technology, strong performance, and updated features. The
+            Mustang has changed throughout the years while still keeping the
+            style and power that made it popular.
           </p>
 
-          <a href="https://www.ford.com/cars/mustang/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.ford.com/cars/mustang/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button>Learn More</button>
           </a>
         </section>
@@ -189,11 +225,14 @@ const Home = () => {
             <span>YOURCARS</span>
           </h4>
           <h2>Built for Car Enthusiasts</h2>
-          <p>KnowYourCars makes it easy to learn about some of the most popular car brands around the world. 
-            Visitors can explore the history of each brand and discover how their vehicles have changed over time. 
-            The website highlights first models, latest vehicles, fastest cars, and different price ranges. 
-            It also provides information about what makes each car brand unique. 
-            Whether you are a car enthusiast or just curious about cars, KnowYourCars has something for everyone.
+          <p>
+            KnowYourCars makes it easy to learn about some of the most popular
+            car brands around the world. Visitors can explore the history of
+            each brand and discover how their vehicles have changed over time.
+            The website highlights first models, latest vehicles, fastest cars,
+            and different price ranges. It also provides information about what
+            makes each car brand unique. Whether you are a car enthusiast or
+            just curious about cars, KnowYourCars has something for everyone.
           </p>
 
           <Link to="/about">
