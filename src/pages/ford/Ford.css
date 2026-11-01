@@ -1,0 +1,111 @@
+.ford-page section {
+    height: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.ford-page section h3 {
+    color: #1579e5;
+    margin: 0;
+}
+
+.ford-page section h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.ford-page section p {
+    width: 700px;
+    max-width: 100%;
+    line-height: 1.4;
+}
+
+.ford-page section span {
+    color: #1579e5;
+}
+
+/* Main */
+#ford-hero {
+    height: 650px;
+    background-image: url("./images/fordlogo.png");
+    text-align: center;
+    padding-top: 200px;
+}
+
+#ford-hero h1 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+#ford-hero p {
+    width: 600px;
+    margin: auto;
+    font-size: 16px;
+}
+
+/* History */
+#ford-history {
+    background-image: url("./images/fordhistory.png");
+    padding-left: 55%;
+    color: black;
+}
+
+#ford-history h1, #ford-history p {
+    color: black;
+}
+
+/* First */
+#ford-first {
+    background-image: url("./images/fordfirst.png");
+}
+
+/* Newest */
+#ford-newest {
+    background-image: url("./images/fordnewest.png");
+    padding-left: 55%;
+}
+
+/* Fastest */
+#ford-fastest {
+    background-image: url("./images/fordfastest.png");
+}
+
+/* Least Expensive */
+#ford-leastexp {
+    background-image: url("./images/fordleastexp.png");
+    padding-left: 55%;
+}
+
+/* Most Expensive */
+#ford-mostexp {
+    background-image: url("./images/fordmostexp.png");
+}
+
+/* Small Screen */
+@media (max-width: 700px) {
+    .ford-page section {
+        height: auto;
+        min-height: 350px;
+        padding: 30px;
+    }
+
+    #ford-hero {
+        min-height: 550px;
+        padding-top: 100px;
+    }
+
+    #ford-hero h1 {
+        font-size: 32px;
+    }
+
+    #ford-history, #ford-newest, #ford-leastexp {
+        padding: 30px;
+    }
+
+    .ford-page section p {
+        width: 100%;
+    }
+}

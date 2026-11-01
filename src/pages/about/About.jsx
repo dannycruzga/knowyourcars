@@ -8,12 +8,10 @@ const About = () => {
             <section className="about-hero">
                 <div className="about-hero-text">
                     <h4>ABOUT KNOWYOURCARS</h4>
-                    <h1>
-                        Every Car Has a Story.<br />
+                    <h1>Every Car Has a Story.<br />
                         We Help You <span>Discover It.</span>
                     </h1>
-                    <p>
-                        KnowYourCars brings car information together in one
+                    <p>KnowYourCars brings car information together in one
                         place for anyone interested in learning more about the
                         automotive world. Visitors can compare vehicles,
                         discover important models, explore performance, and
@@ -34,12 +32,10 @@ const About = () => {
 
                 <div className="story-text">
                     <h4>OUR STORY</h4>
-                    <h2>
-                        Built for People<br />
+                    <h2>Built for People<br />
                         Who Love Cars
                     </h2>
-                    <p>
-                        KnowYourCars was created by car enthusiasts, for car
+                    <p>KnowYourCars was created by car enthusiasts, for car
                         enthusiasts. We wanted to build a place where people can
                         easily explore the history, models, and innovations of the
                         world's most recognizable car brands. Whether you're looking
@@ -53,12 +49,10 @@ const About = () => {
             <section className="purpose">
                 <div className="purpose-text">
                     <h4>OUR PURPOSE</h4>
-                    <h2>
-                        Connecting the Past,<br />
+                    <h2>Connecting the Past,<br />
                         Present, and <span>Future of Cars.</span>
                     </h2>
-                    <p>
-                        KnowYourCars is designed to connect the past, present,
+                    <p>KnowYourCars is designed to connect the past, present,
                         and future of the automotive world. Our purpose is to
                         make that information easy to explore while helping
                         visitors develop a greater appreciation for the vehicles
