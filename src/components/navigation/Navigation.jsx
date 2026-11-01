@@ -1,18 +1,18 @@
 import "./Navigation.css";
 import {NavLink} from "react-router-dom";
-import {HashLink} from "/react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 const Navigation = () => {
 
     return (
         <nav id="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Ford</a></li>
-                <li><a href="#">Chevrolet</a></li>
-                <li><a href="#">Dodge</a></li>
-                <li><a href="#">Mercedes-Benz</a></li>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/about">About Us</NavLink></li>
+                <li><NavLink to="/ford">Ford</NavLink></li>
+                <li><NavLink to="/chevrolet">Chevrolet</NavLink></li>
+                <li><NavLink to="/dodge">Dodge</NavLink></li>
+                <li><NavLink to="/mercedes">Mercedes-Benz</NavLink></li>
             </ul>
         </nav>
     );

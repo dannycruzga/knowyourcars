@@ -1,0 +1,34 @@
+/* Hero */
+#hero {
+    height: 425px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    background-image: url("/public/images/home/main.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+#hero span {
+    color: #159cff;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+/* Brands */
+#brands {
+    background: #eeeeee;
+    text-align: center;
+    padding: 40px;
+}
+
+#brands h2 {
+    font-size: 35px;
+}
