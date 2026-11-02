@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/knowyourcars/static/css/main.7c40dd2a.css",
-    "main.js": "/knowyourcars/static/js/main.6cc22769.js",
+    "main.css": "/knowyourcars/static/css/main.a595ca18.css",
+    "main.js": "/knowyourcars/static/js/main.f9800398.js",
     "static/media/ourstory.png": "/knowyourcars/static/media/ourstory.67627e9f176d8e6bb556.png",
     "static/media/ford.png": "/knowyourcars/static/media/ford.4018faa9c474cf612b3e.png",
     "static/media/main.png": "/knowyourcars/static/media/main.0178b07fc83182603a55.png",
@@ -58,11 +58,11 @@
     "static/media/charger.jpg": "/knowyourcars/static/media/charger.b79e1f87fe4d6f6083c8.jpg",
     "static/media/durango.jpg": "/knowyourcars/static/media/durango.ce4e0af71c38649c66dd.jpg",
     "index.html": "/knowyourcars/index.html",
-    "main.7c40dd2a.css.map": "/knowyourcars/static/css/main.7c40dd2a.css.map",
-    "main.6cc22769.js.map": "/knowyourcars/static/js/main.6cc22769.js.map"
+    "main.a595ca18.css.map": "/knowyourcars/static/css/main.a595ca18.css.map",
+    "main.f9800398.js.map": "/knowyourcars/static/js/main.f9800398.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c40dd2a.css",
-    "static/js/main.6cc22769.js"
+    "static/css/main.a595ca18.css",
+    "static/js/main.f9800398.js"
   ]
 }
