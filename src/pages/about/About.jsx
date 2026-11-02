@@ -70,7 +70,7 @@ const About = () => {
         <h4>EXPLORE MORE</h4>
         <h2>The History of Cars</h2>
         <p>Take a closer look at how automobiles have evolved over time.</p>
-        <iframe src="https://www.youtube.com/embed/3V9g8q8V8sI" title="History of Cars" allowFullScreen>
+        <iframe src="https://www.youtube.com/embed/UWSgWCEb3sQ" title="Automotive History" allowfullscreen>
         </iframe>
       </section>
       <Contact />

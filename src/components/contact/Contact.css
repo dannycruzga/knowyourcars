@@ -1,6 +1,6 @@
 #contact {
-    background: #071827;
-    color: white;
+    background: #eeeeee;
+    color: #333;
     text-align: center;
     padding: 50px 20px;
 }
@@ -27,8 +27,7 @@
     font-weight: bold;
 }
 
-#contact input,
-#contact textarea {
+#contact input, #contact textarea {
     padding: 12px;
     border: 1px solid #cccccc;
     border-radius: 5px;

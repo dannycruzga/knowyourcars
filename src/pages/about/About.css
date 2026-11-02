@@ -92,9 +92,10 @@
 
 /* About Video */
 .about-video {
-    background: #eeeeee;
+    background: #071827;
     text-align: center;
     padding: 50px 20px;
+    color: white;
 }
 
 .about-video h4 {
