@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import BrandCard from "../../components/brandcard/BrandCard";
@@ -10,20 +11,27 @@ import chevrolet from "./images/chevrolet.png";
 import dodge from "./images/dodge.png";
 import mercedes from "./images/mercedes.png";
 import fordm from "./images/fordm.jpg";
-import mustang from "./images/mustang.jpg";
-import f150 from "./images/f150.jpg";
-import corvette from "./images/corvette.jpeg";
-import camaro from "./images/camaro.jpg";
-import charger from "./images/charger.jpg";
-import durango from "./images/durango.jpg";
-import cclass from "./images/cclass.jpg";
-import gclass from "./images/gclass.jpg";
 import chevroletcor from "./images/chevroletcor.jpeg";
 import dodgehc from "./images/dodgehc.avif";
 import mercedesamg from "./images/mercedesamg.jpg";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const [cars, setCars] = useState([]);
+
+  useEffect(() => {
+    const loadCars = async () => {
+      try {
+        const response = await axios.get("https://hello-world-tnh4.onrender.com/api/cars");
+        setCars(response.data);
+      } catch (error) {
+        console.error("Error fetching cars:", error);
+      }
+    };
+
+    loadCars();
+  }, []);
 
   const slides = [
     { image: fordm, name: "Ford Mustang" },
@@ -116,70 +124,17 @@ const Home = () => {
       <section id="cars">
         <h2>Explore Our Cars</h2>
         <div id="car-list">
-          <CarCard
-            brand="Ford"
-            model="Mustang"
-            year={2025}
-            price="$32,000"
-            type="Sports Car"
-            image={mustang}
-          />
-          <CarCard
-            brand="Ford"
-            model="F-150"
-            year={2025}
-            price="$38,000"
-            type="Pickup Truck"
-            image={f150}
-          />
-          <CarCard
-            brand="Chevrolet"
-            model="Corvette"
-            year={2025}
-            price="$68,000"
-            type="Sports Car"
-            image={corvette}
-          />
-          <CarCard
-            brand="Chevrolet"
-            model="Camaro"
-            year={2025}
-            price="$32,000"
-            type="Sports Car"
-            image={camaro}
-          />
-          <CarCard
-            brand="Dodge"
-            model="Charger"
-            year={2025}
-            price="$60,000"
-            type="Muscle Car"
-            image={charger}
-          />
-          <CarCard
-            brand="Dodge"
-            model="Durango"
-            year={2025}
-            price="$42,000"
-            type="SUV"
-            image={durango}
-          />
-          <CarCard
-            brand="Mercedes-Benz"
-            model="C-Class"
-            year={2025}
-            price="$48,000"
-            type="Sedan"
-            image={cclass}
-          />
-          <CarCard
-            brand="Mercedes-Benz"
-            model="G-Class"
-            year={2025}
-            price="$149,000"
-            type="SUV"
-            image={gclass}
-          />
+          {cars.map((car) => (
+            <CarCard
+              key={car._id}
+              brand={car.brand}
+              model={car.model}
+              year={car.year}
+              price={car.price}
+              type={car.type}
+              image={`https://hello-world-tnh4.onrender.com/${car.main_image}`}
+            />
+          ))}
         </div>
       </section>
 
