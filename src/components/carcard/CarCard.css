@@ -18,3 +18,41 @@
 .car-card p {
     font-size: 14px;
 }
+
+.car-card {
+    cursor: pointer;
+}
+
+.car-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.car-details {
+    background: #102c43;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+.car-details img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.car-details button {
+    float: right;
+    cursor: pointer;
+}

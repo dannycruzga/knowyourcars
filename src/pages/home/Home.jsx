@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import BrandCard from "../../components/brandcard/BrandCard";
 import CarCard from "../../components/carcard/CarCard";
 import {Tooltip} from "react-tooltip";
+import AddCar from "../../components/addcar/AddCar";
 
 import ford from "./images/ford.png";
 import chevrolet from "./images/chevrolet.png";
@@ -123,6 +124,9 @@ const Home = () => {
 
       <section id="cars">
         <h2>Explore Our Cars</h2>
+        <AddCar onCarAdded={(newCar) => {
+          setCars((prevCars) => [...prevCars, newCar]); 
+        }} />
         <div id="car-list">
           {cars.map((car) => (
             <CarCard
