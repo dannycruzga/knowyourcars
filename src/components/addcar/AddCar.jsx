@@ -8,7 +8,7 @@ const AddCar = ({ onCarAdded }) => {
 
   const uploadImage = (e) => {
     const file = e.target.files[0];
-    
+
     if (file) {
       setPreview(URL.createObjectURL(file));
     }
@@ -20,6 +20,14 @@ const AddCar = ({ onCarAdded }) => {
     setResult("Sending...");
 
     const formData = new FormData(form);
+
+    for (const field of ["brand", "model", "price", "type"]) {
+        
+      if (!formData.get(field).trim()) {
+        setResult("Please fill out all fields.");
+        return;
+      }
+    }
 
     try {
       const response = await fetch(
