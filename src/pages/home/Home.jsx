@@ -6,6 +6,7 @@ import BrandCard from "../../components/brandcard/BrandCard";
 import CarCard from "../../components/carcard/CarCard";
 import {Tooltip} from "react-tooltip";
 import AddCar from "../../components/addcar/AddCar";
+import EditCar from "../../components/editcar/EditCar";
 
 import ford from "./images/ford.png";
 import chevrolet from "./images/chevrolet.png";
@@ -18,8 +19,28 @@ import mercedesamg from "./images/mercedesamg.jpg";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
   const [cars, setCars] = useState([]);
+  const [deleteMessage, setDeleteMessage] = useState("");
+  const [editingCar, setEditingCar] = useState(null);
+  const [editMessage, setEditMessage] = useState("");
+
+  const deleteCar = async (id) => {
+    try {
+      const response = await fetch(
+        `https://hello-world-tnh4.onrender.com/api/cars/${id}`,
+        { method: "DELETE" },
+      );
+
+      if (response.status === 200) {
+        setCars((cars) => cars.filter((car) => car._id !== id));
+        setDeleteMessage("Car deleted successfully!");
+      } else {
+        setDeleteMessage("Error deleting car.");
+      }
+    } catch (error) {
+      setDeleteMessage("Error deleting car.");
+    }
+  };
 
   useEffect(() => {
     const loadCars = async () => {
@@ -103,7 +124,10 @@ const Home = () => {
 
       <section id="slideshow">
         <h4>EXPLORE MORE</h4>
-        <h2 data-tooltip-id="car-tooltip" data-tooltip-content="Explore some of our favorite cars!">
+        <h2
+          data-tooltip-id="car-tooltip"
+          data-tooltip-content="Explore some of our favorite cars!"
+        >
           Featured Cars
         </h2>
         <Tooltip id="car-tooltip" />
@@ -124,9 +148,11 @@ const Home = () => {
 
       <section id="cars">
         <h2>Explore Our Cars</h2>
-        <AddCar onCarAdded={(newCar) => {
-          setCars((prevCars) => [...prevCars, newCar]); 
-        }} />
+        <AddCar
+          onCarAdded={(newCar) => {
+            setCars((prevCars) => [...prevCars, newCar]);
+          }}
+        />
         <div id="car-list">
           {cars.map((car) => (
             <CarCard
@@ -137,9 +163,26 @@ const Home = () => {
               price={car.price}
               type={car.type}
               image={`https://hello-world-tnh4.onrender.com/${car.main_image}`}
+              id={car._id}
+              onDelete={deleteCar}
+              onEdit={() => setEditingCar(car)}
             />
           ))}
         </div>
+        <p>{deleteMessage}</p>
+        {editingCar && (
+          <EditCar car={editingCar} onSave={(updatedCar) => { setCars((cars) =>
+                cars.map((car) =>
+                  car._id === updatedCar._id ? updatedCar : car,
+                ),
+              );
+              setEditMessage("Car updated successfully!");
+              setEditingCar(null);
+            }}
+            onClose={() => setEditingCar(null)}
+          />
+        )}
+        <p>{editMessage}</p>
       </section>
 
       <section id="more">

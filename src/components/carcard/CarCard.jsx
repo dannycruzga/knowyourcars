@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./CarCard.css";
 
-const CarCard = ({ brand, model, year, price, type, image }) => {
+const CarCard = ({ id, brand, model, year, price, type, image, onDelete, onEdit }) => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
@@ -15,6 +15,12 @@ const CarCard = ({ brand, model, year, price, type, image }) => {
         <p>Price: {price}</p>
         <p>Type: {type}</p>
         <button type="button">View Details</button>
+        <button onClick={(e) => { e.stopPropagation(); onDelete(id); }}>
+          Delete
+        </button>
+        <button onClick={(e) => { e.stopPropagation(); onEdit(); }}>
+          Edit
+        </button>
       </div>
 
       {showDetails && (

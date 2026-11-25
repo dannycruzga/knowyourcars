@@ -1,0 +1,37 @@
+#edit-car {
+    background: #102c43;
+    color: white;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+#edit-car h2 {
+    text-align: center;
+    color: #159cff;
+}
+
+#edit-car form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#edit-car input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#edit-car button {
+    background: #159cff;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+#edit-car button:hover {
+    background: #0077cc;
+}
